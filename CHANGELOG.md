@@ -48,6 +48,10 @@ Various improvements have been made in the core to improve performance. Addition
 - The PnP runtime now throws an `ERR_REQUIRE_ESM` error when attempting to require an ES Module, matching the default Node.js behaviour.
 - Updates the PnP compatibility layer for TypeScript 4.6 Beta (it's possible we'll need to publish another patch update once the 4.6 enters stable).
 
+### **Breaking Changes**
+
+- PnP fallbacks to `react-scripts` and `gatsby`'s dependencies has been removed since they cause hard to debug issues and those projects should work without them nowadays
+
 ### Bugfixes
 
 - `@yarnpkg/pnpify` now escapes paths correctly.
